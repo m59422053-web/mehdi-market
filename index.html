@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="مهدی‌مارکت؛ خدمات طراحی، ادیت، تایپ، طراحی سایت و تولید محتوا">
+<title>مهدی‌مارکت | خدمات دیجیتال</title>
+<style>
+:root{--bg:#0b0b0d;--panel:#151518;--gold:#e5b94f;--muted:#b8b4aa;--white:#fff}
+*{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--bg);color:var(--white);line-height:1.9}
+.wrap{width:min(1100px,92%);margin:auto}header{padding:22px 0;border-bottom:1px solid #29251b;background:#101012}
+nav{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}.brand{font-size:24px;font-weight:800;color:var(--gold)}nav a{color:#eee;text-decoration:none;margin:0 8px;font-size:14px}
+.hero{padding:76px 0 58px;background:radial-gradient(ellipse at 75% 0%,#4a3717 0%,#17130d 25%,#0b0b0d 68%)}
+.tag{display:inline-block;color:var(--gold);border:1px solid #80652b;padding:4px 13px;border-radius:30px;font-size:13px}
+h1{font-size:clamp(30px,6vw,54px);line-height:1.45;margin:16px 0}h1 span{color:var(--gold)}.lead{color:var(--muted);max-width:650px}
+.btn{display:inline-block;background:var(--gold);color:#17130b;text-decoration:none;padding:11px 22px;border-radius:10px;font-weight:bold;margin-top:18px}
+section{padding:48px 0}.section-title{font-size:27px;margin:0 0 22px}.section-title span{color:var(--gold)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:var(--panel);border:1px solid #302a1d;border-radius:16px;padding:20px}.card h3{margin:0 0 8px;color:var(--gold)}.card p{margin:0;color:var(--muted);font-size:14px}
+.steps{color:var(--muted);padding-right:22px}.contact{background:linear-gradient(135deg,#211b10,#121214);border:1px solid #6c5424;border-radius:18px;padding:26px}
+footer{border-top:1px solid #29251b;padding:24px 0;color:var(--muted);font-size:13px}
+form{display:grid;gap:12px;max-width:600px}input,select,textarea{width:100%;padding:12px;border-radius:9px;border:1px solid #49402c;background:#0e0e10;color:white;font:inherit}label{font-size:14px;color:#e6d7b1}button{border:0;cursor:pointer;font:inherit}
+.note{font-size:12px;color:#aaa;margin-top:12px}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav><div class="brand">✦ MEHDI MARKET</div><div><a href="#services">خدمات</a><a href="#order">ثبت سفارش</a><a href="#contact">ارتباط</a></div></nav></div></header>
+<main>
+<div class="hero"><div class="wrap"><span class="tag">خدمات دیجیتال و خلاقانه</span><h1>ایده‌ات رو به <span>واقعیت</span> تبدیل کن</h1><p class="lead">به مهدی‌مارکت خوش اومدی؛ برای طراحی پوستر و بنر، ادیت عکس و فیلم، تایپ و پروژه، طراحی سایت و تولید محتوا سفارش ثبت کن.</p><a class="btn" href="#order">ثبت درخواست</a></div></div>
+<section id="services"><div class="wrap"><h2 class="section-title">خدمات <span>ما</span></h2><div class="cards">
+<div class="card"><h3>طراحی پوستر و بنر</h3><p>طراحی تبلیغاتی، مناسب شبکه‌های اجتماعی و مناسبت‌ها.</p></div>
+<div class="card"><h3>ادیت عکس و فیلم</h3><p>ویرایش تصاویر، تدوین کلیپ و آماده‌سازی محتوای جذاب.</p></div>
+<div class="card"><h3>تایپ و انجام پروژه</h3><p>تایپ متن و آماده‌سازی فایل‌ها و پروژه‌های متنی.</p></div>
+<div class="card"><h3>طراحی سایت</h3><p>طراحی صفحات معرفی، فروشگاهی و وب‌سایت‌های ساده.</p></div>
+<div class="card"><h3>تبلیغات و تولید محتوا</h3><p>ایده‌پردازی و آماده‌سازی محتوای تبلیغاتی.</p></div>
+</div></div></section>
+<section id="order"><div class="wrap"><h2 class="section-title">ثبت <span>سفارش</span></h2><div class="contact"><p>مشخصات درخواستت رو وارد کن؛ متن سفارش آماده می‌شه تا از طریق سروش ارسالش کنی.</p>
+<form id="orderForm"><div><label for="name">نام شما</label><input id="name" required placeholder="نام و نام خانوادگی"></div>
+<div><label for="service">نوع خدمت</label><select id="service" required><option value="">انتخاب خدمت</option><option>طراحی پوستر و بنر</option><option>ادیت عکس و فیلم</option><option>تایپ و پروژه</option><option>طراحی سایت</option><option>تبلیغات و تولید محتوا</option><option>سایر</option></select></div>
+<div><label for="details">توضیحات سفارش</label><textarea id="details" rows="4" placeholder="جزئیات موردنظرت رو بنویس"></textarea></div>
+<button class="btn" type="submit">آماده‌سازی متن سفارش</button></form>
+<p class="note">توجه: این نسخهٔ اولیه روی GitHub Pages اجرا می‌شود و سفارش‌ها را در سرور ذخیره یا خودکار برای مدیر ارسال نمی‌کند. پس از انتشار، می‌توانیم اتصال امن ثبت سفارش را جداگانه راه‌اندازی کنیم.</p>
+</div></div></section>
+<section id="contact"><div class="wrap"><h2 class="section-title">ارتباط با <span>مهدی‌مارکت</span></h2><div class="card"><p>برای پیگیری سفارش، از طریق سروش با شماره‌ای که در اختیار مشتری قرار می‌گیرد تماس بگیرید.</p><p style="color:var(--gold);font-weight:bold">مهدی‌مارکت | قیمت‌ها به تومان</p></div></div></section>
+</main><footer><div class="wrap">© مهدی‌مارکت — تمامی حقوق محفوظ است.</div></footer>
+<script>
+document.getElementById('orderForm').addEventListener('submit', async function(e){
+ e.preventDefault();
+ const msg=`سفارش جدید مهدی‌مارکت\nنام: ${document.getElementById('name').value}\nخدمت: ${document.getElementById('service').value}\nتوضیحات: ${document.getElementById('details').value}`;
+ try{await navigator.clipboard.writeText(msg);alert('متن سفارش کپی شد. آن را در سروش برای مدیر ارسال کنید.');}
+ catch(err){window.prompt('متن سفارش را کپی کنید:',msg);}
+});
+</script>
+</body></html>
