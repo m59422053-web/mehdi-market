@@ -46,13 +46,28 @@ form{display:grid;gap:12px;max-width:600px}input,select,textarea{width:100%;padd
 <p class="note">توجه: این نسخهٔ اولیه روی GitHub Pages اجرا می‌شود و سفارش‌ها را در سرور ذخیره یا خودکار برای مدیر ارسال نمی‌کند. پس از انتشار، می‌توانیم اتصال امن ثبت سفارش را جداگانه راه‌اندازی کنیم.</p>
 </div></div></section>
 <section id="contact"><div class="wrap"><h2 class="section-title">ارتباط با <span>مهدی‌مارکت</span></h2><div class="card"><p>برای پیگیری سفارش، از طریق سروش با شماره‌ای که در اختیار مشتری قرار می‌گیرد تماس بگیرید.</p><p style="color:var(--gold);font-weight:bold">مهدی‌مارکت | قیمت‌ها به تومان</p></div></div></section>
-</main><footer><div class="wrap">© مهدی‌مارکت — تمامی حقوق محفوظ است.</div></footer>
+</main><footer><div class="wrap">© مهدی‌مارکت — تمامی حقوق محفوظ است
 <script>
-document.getElementById('orderForm').addEventListener('submit', async function(e){
- e.preventDefault();
- const msg=`سفارش جدید مهدی‌مارکت\nنام: ${document.getElementById('name').value}\nخدمت: ${document.getElementById('service').value}\nتوضیحات: ${document.getElementById('details').value}`;
- try{await navigator.clipboard.writeText(msg);alert('متن سفارش کپی شد. آن را در سروش برای مدیر ارسال کنید.');}
- catch(err){window.prompt('متن سفارش را کپی کنید:',msg);}
+document.getElementById('orderForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+
+  const msg = `سفارش جدید مهدی‌مارکت
+نام: ${document.getElementById('name').value}
+خدمت: ${document.getElementById('service').value}
+توضیحات: ${document.getElementById('details').value}`;
+
+  try {
+    await navigator.clipboard.writeText(msg);
+    alert('متن سفارش کپی شد. حالا آن را در سروش ارسال کنید.');
+  } catch (err) {
+    window.prompt('متن سفارش را کپی کنید:', msg);
+  }
+
+  window.location.href = 'https://splus.ir/httpssplusirmahdi1344';
+});
+</script>
+
+ 
 });
 </script>
 </body></html>
